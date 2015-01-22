@@ -1,0 +1,8 @@
+.icon{ background:url("icon.png") top left no-repeat; }
+.icon-twitter{ width:33px; height:34px; background-position:-1px -1px; }
+.icon-instagram{ width:33px; height:33px; background-position:-1px -36px; }
+.icon-facebook{ width:33px; height:33px; background-position:-1px -70px; }
+.icon-phone{ width:28px; height:19px; background-position:-1px -104px; }
+.icon-home{ width:21px; height:18px; background-position:-1px -124px; }
+.icon-point-down{ width:13px; height:6px; background-position:-1px -143px; }
+

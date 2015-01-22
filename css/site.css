@@ -1,0 +1,401 @@
+/*
+FUNÇÕES PADRÕES START
+*********************************************************************/
+.clear,
+.first {
+  clear: both;
+}
+/*********************************************************************
+FUNÇÕES PADRÕES END
+*/
+/*
+NON-RESPONSIVE START
+**********************************************************************************************/
+/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
+.container {
+  max-width: none !important;
+  width: 960px;
+}
+.navbar-nav > li > a {
+  padding-top: 49px;
+  padding-bottom: 49px;
+}
+/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*/
+/* Reset the container */
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+.navbar-brand {
+  margin-left: -15px;
+}
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #e86e25 !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+/**********************************************************************************************
+NON-RESPONSIVE END
+*/
+::selection {
+  background-color: #e86e25;
+  color: #FFF;
+}
+::-moz-selection {
+  background-color: #e86e25;
+  color: #FFF;
+}
+small {
+  display: inline-block;
+  line-height: 1.1;
+}
+textarea {
+  resize: vertical;
+}
+a,
+button {
+  transition: all 0.25s ease 0s;
+}
+/*
+FONTS START
+**********************************************************************************************/
+.box-banner .bar {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-weight: normal;
+}
+.box-dicas .media-heading,
+.box-servicos .box-header h2,
+.nav,
+.btn,
+.box-banner .plus,
+.chamada .media-heading {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-weight: normal;
+}
+.footer-header,
+.menu-footer {
+  font-family: 'GothamBlack', Arial, sans-serif;
+  font-weight: normal;
+}
+.box-dicas .box-header h2,
+.box-banner h1,
+.box-banner .header {
+  font-family: 'GothamBlackItalic', Arial, sans-serif;
+  font-weight: normal;
+}
+.site-direitos small {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+/**********************************************************************************************
+FONTS END
+*/
+/*
+ESTRUTURA START
+**********************************************************************************************/
+.extra-header .navbar-header {
+  position: relative;
+}
+.extra-header .navbar-header .point {
+  position: absolute;
+  bottom: -6px;
+  left: 26px;
+}
+.extra-header .navbar-brand {
+  padding: 16px 10px;
+}
+.extra-header .navbar {
+  margin: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.extra-header .nav {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.extra-header .nav > li + li {
+  background: url(../imagem/site/bg-menu-item.png) no-repeat left center;
+  padding-left: 3px;
+}
+.extra-footer {
+  background: url(../imagem/site/bg-footer.jpg) no-repeat center top #f3f3f4;
+  font-size: 13px;
+}
+.extra-footer .site-footer {
+  padding: 62px 0 30px;
+}
+.extra-footer .footer-header {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.extra-footer .footer-header.inline-block {
+  display: inline-block;
+}
+.extra-footer .menu-footer {
+  list-style: url(../imagem/site/list.png);
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+.extra-footer .menu-footer > li {
+  margin-bottom: 10px;
+}
+.extra-direitos {
+  background: #404041;
+  text-align: center;
+}
+.extra-direitos .site-direitos {
+  padding: 25px 0;
+}
+.extra-direitos small {
+  font-size: 10px;
+}
+.extra-direitos,
+.extra-direitos a {
+  color: #8d8d8a;
+}
+.home .extra-central {
+  background: url(../imagem/site/bg-home.jpg) no-repeat center top;
+}
+/**********************************************************************************************
+ESTRUTURA END
+*/
+/*
+CLASSES START
+**********************************************************************************************/
+[class^='lista-'],
+[class^='lista-'],
+[class^='menu-'],
+[class^='menu-'] ul,
+.cycle-slideshow {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.btn {
+  padding: 10px 30px;
+  font-size: 13px;
+}
+.btn-gray {
+  background: #EEE;
+  color: #C93F2A;
+}
+.btn-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.box-banner .line-1 {
+  height: 458px;
+  padding: 90px 0px 0;
+}
+.box-banner .line-1 h1 {
+  color: #FFF;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -1px;
+}
+.box-banner .line-1 h1 small {
+  display: block;
+  font-size: 20px;
+  color: #818181;
+  text-transform: none;
+  margin-bottom: 32px;
+}
+.box-banner .line-2 {
+  height: 84px;
+}
+.box-banner .line-2 .box-content {
+  padding: 15px 60px 0 220px;
+  text-align: center;
+}
+.box-banner .line-2 .header {
+  font-size: 20px;
+  color: #e1bb9a;
+  display: block;
+}
+.box-banner .line-2 .text-phone {
+  color: #e86e25;
+}
+.box-banner .line-2 .box-plus {
+  text-align: center;
+  padding-top: 30px;
+}
+.box-banner .line-2,
+.box-banner .line-2 a {
+  color: #FFF;
+}
+.box-servicos {
+  margin-bottom: 40px;
+}
+.box-servicos .box-header {
+  text-align: center;
+  height: 76px;
+  padding: 20px 0;
+}
+.box-servicos .box-header h2 {
+  color: #bfbfba;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.box-dicas {
+  padding-top: 3px;
+}
+.box-dicas .imagem {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+  height: 251px;
+  padding-right: 38px;
+}
+.box-dicas .box-header {
+  border-bottom: 1px solid #3b3b3b;
+  padding: 34px 0 15px;
+  margin-bottom: 20px;
+}
+.box-dicas .box-header h2,
+.box-dicas .box-header h3 {
+  color: #e2e2e2;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.box-dicas .box-content {
+  color: #FFF;
+}
+.box-dicas .box-content .media-heading {
+  font-size: 18px;
+}
+.box-likebox {
+  background: #FFF;
+  margin-top: 40px;
+}
+.chamada .imagem {
+  display: block;
+  height: 205px;
+  overflow: hidden;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10;
+}
+.chamada .chamada-header .media-heading {
+  font-size: 20px;
+  color: #818181;
+  margin: 10px 0;
+}
+.chamada .chamada-content {
+  line-height: 1.1;
+}
+.chamada-bottom {
+  background: url(../imagem/site/bg-chamada-footer.jpg) no-repeat center top;
+  height: 254px;
+}
+.imagem {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+.imagem-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.inline-block {
+  display: inline-block;
+}
+[class^='icon-'],
+[class*='icon-'] {
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url(../imagem/site/icon.png);
+}
+.space {
+  width: 1%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.relative {
+  position: relative;
+}
+/**********************************************************************************************
+CLASSES END
+*/
+/*
+JQUERY UI START
+**********************************************************************************************/
+/**********************************************************************************************
+JQUERY UI END
+*/
+@media (max-width: 767px) {
+  /*    .site-geral:before {content:"TABLET";}*/
+}
+@media (max-width: 480px) {
+  /*#GERAL:before {content:"MOBILE";}*/
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+}
